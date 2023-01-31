@@ -94,7 +94,12 @@ html, body{
 .gif{
     max-width: 100%;
 }
-.social a{
+
+.social{
+    margin-top: 4rem;
+}
+
+.social a {
     font-size: 4em;
     padding: 2rem;
 }
