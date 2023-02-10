@@ -260,3 +260,12 @@ hr.light-1001{
     margin-bottom: 2rem;
 
 }
+
+.profolioImg{
+  object-fit: none;
+    /* Do not scale the image */
+    object-position: center;
+    /* Center the image within the element */
+    height: 300px;
+    width: 100%;
+}
