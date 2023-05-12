@@ -5,7 +5,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="Author" content="Alisa Luomanmäki">
-        <link href="css/bootstrap.css" rel="stylesheet">
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous"
+      />
         <link href="css/style.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/2fb659ed0b.js" crossorigin="anonymous"></script>
     </head>
@@ -25,9 +30,6 @@
                             <a class="nav-link" href="index.html">Etusivu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="luomanmaki.html">Alisa Luomanmäki</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="portfolio.html">Portfolio</a>
                         </li>
                         <li class="nav-item active">
@@ -37,109 +39,44 @@
                 </div>
             </div>
         </nav>
-        <!-- Image Slider-->
-        <div id="slides" class="carousel slide" data-ride="carousel">
-            <ul class="carousel-indicators">
-                <li data-target="#slides" data-slide-to="0" class="active"></li>
-                <li data-target="#slides" data-slide-to="1"></li>
-                <li data-target="#slides" data-slide-to="2"></li>
-            </ul>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/vuoristo.jpg" class="d-block w-100" alt=""/>
-                    <div class="carousel-caption">
-                        <h1 class="display-2">Ammattilainen käytössäsi</h1>
-                        <h3>Luodaan yhdessä tavoitteesi</h3>
-                        <a href="portfolio.html" role="button"
-                           class="btn btn-outline-light btn-lg" aria-pressed="true">Portfolio</a>
-                        <a href="yhteydenotto.html"><button type="button" class="btn btn_etusivu btn-large">Ota yhteyttä</button></a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/kahvilla.jpg" class="d-block w-100" alt=""/>
-                    <div class="carousel-caption">
-                        <h2 class="display-3">Ideoimisen ja suunnittelun ei tarvitse olla tylsää</h2>
-                        <h3>Luodaan yhdessä tavoitteesi</h3>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/tyo.jpg" class="d-block w-100" alt=""/>
-                    <div class="carousel-caption">
-                        <h1>Aallon harjalla</h1>
-                        <h3>Luodaan yhdessä tavoitteesi</h3>
-                    </div>
-                </div>      
-            </div>
+    <!-- Me area -->
+    <div class="container pt-5">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <p>Aloittanut IT-tradenomin opiskelut 2020 keväällä OAMK:ssa.</p>
+            <p>
+              Harrastan viherkasvien kasvattamista. Rakantan tanssia itämäistä
+              tanssia ja haluan kehittyä paremmaksi tanssiaksi. Aion opetella
+              tekemään parhaat mykyt <3
+            </p>
+            <p>
+              Pidän haasteista ja koodaamisesta. Olen visuaalinen ihminen ja pidän
+              töissäni tärkeänä että kuvat ja tekstit ovat tasapainossa. Pyrin
+              tekemään parhaani, että opin uutta ja saan haastaa oman osaamiseni.
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="img/allimon.jpg" class="img-fluid" alt="" />
+            <h4 class="text-center pt-4">
+              Opiskelen lisää, että saan nopeasti hyvää jälkeä.
+            </h4>
+            <p class="text-center"><i class="far fa-heart text-center"></i></p>
+          </div>
         </div>
-        <!-- Jumbotron -->
-        <div class="container-fluid">
-            <div class="row jumbotron">
-                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
-                    <p class="lead">
-                        Tämä sivu on ensimmäinen porfolioni. Olen tehnyt sivun
-                        itse oman koodaamiseni oppimani pohjalta. Sivuston
-                        kuvat ovat ovat CC-lisenssin alla paitsi ne jotka
-                        on erikseen mainittu. Mene yhteydenottosivun alaosaan.
-                    </p>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-                    <a href="connect.html" role="button" class="btn btn-outline-secondary btn-lg" aria-pressed="true">Linkki kuvalähteisiin</a>
-                </div>
-
-            </div>
-        </div>
-        <!--Tervetuloa alue-->
-        <div class="container-fluid padding">
+      </div>
+      <hr />
+        <!-- Portfolio title-->
+        <div class="container-fluid pt-5 pb-2">
             <div class="row welcome text-center">
                 <div class="col-12">
-                    <h1 class="display-4">Tervetuloa</h1>
-                </div>
-                <hr>
-                <div class="col-12">
-                    <p class="lead">
-                        Olen IT-tradenomi opiskelija Alisa Luomanmäki. Tervetuloa tutustumaan ensimmäiseen porfoliooni. Olen vasta opiskelija, mutta
-                        pyrin tekemään asiat parhaani mukaan. Tämä on kouluharjoitukseni, jonka ulkonäön ja sisällön päätän minä itse. Halusin
-                        sivusta kauniin ja värikkään. Omasta mielestäni tämä on upea ja toivottavasti iskee myös sinun silmääsi.
-                    </p>
-                    <p class="h4 add-space">Olkaa hyvä!</p>
-                </div>
-            </div>
-        </div>
-        <!-- 3 kolummia alue-->
-        <div class="container-fluid padding">
-            <div class="row text-center padding">
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <i class="fas fa-edit"></i>
-                    <h3>Suunnitelu</h3>
-                    <p>Suunnitelmat luovat tärkeän pohjan projekteille</p>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <i class="far fa-keyboard"></i>
-                    <h3>Työnskentely</h3>
-                    <p>Ideoiden toteuttaminen toteen kuvien, koodin ja tarvittavan sisällön kanssa.</p>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <i class="fas fa-apple-alt"></i>
-                    <h3>Työn hedelmä</h3>
-                    <p>Tärkeintä on myös että itse ja asiakas nauttivat työnlopputuotoksesta.</p>
-
-                </div>
-            </div>
-            <hr class="my-4">
-        </div>
-        <!-- Otsikko alue-->
-        <div class="container-fluid padding">
-            <div class="row welcome text-center">
-                <div class="col-12">
-                    <h1 class="display-4">Portfolio</h1>
-
+                    <h1 class="display-6">My Portfolio</h1>
                 </div>
                 <hr>
             </div>
         </div>
-        <!-- projektini -->
-        <div class="container-fluid padding">
-            <div class="row padding">
+        <!-- My Projects -->
+        <div class="container-fluid pt-5">
+            <div id="portfolio" class="row padding">
                 <div class="col-md-4">
                     <div class="card">
                         <img class="card-img-top" src="img/abc001.PNG">
@@ -156,68 +93,33 @@
                         </div>
                     </div>
                 </div>
-
-
-            </div>
-        </div>
-
-        <!-- Info-->
-        <div class="container-fluid padding">
-            <div class="row padding">
-                <div class="col-lg-6">
-                    <h2 class="heading-space">Sivuston päivitys</h2>
-                    <p>Päivitän portfolio, kun sisältöä tulee koulutöistä ja
-                        muista harjoituksistani. Ne voivat olla esimerkiksi nettisivuja,
-                        projekteja tai koodaustöitä.</p>
-                    <p>Pyrin oppimaan ja haastamaan itseäni paljon, että ammattitaitoni
-                        kehittyy.</p>
-                    <br>
-                </div>
-                <div class="col-lg-5">
-                    <img src="img/summer_flower.jpg" alt="" class="img-fluid"/>
-                </div>
-            </div>
-            <hr class="my-4">
-        </div>
-
-        <!-- Connect -->
-        <div class="container-fluid padding">
-            <div class="row text-center padding">
-                <div class="col-12">
-                    <h3>Ota yhteyttä</h2>
-                </div>
-                <div class="col-12 social padding">
-                    <a href="https://www.facebook.com/alisa.luomanmaki" target="blank">
-                        <i class="fab fa-facebook"></i></a>
-                    <a href=" https://github.com/Sisarus" target="blank">
-                        <i class="fab fa-github padding"></i></a>
-                    <a href="https://www.linkedin.com/in/alisa-luomanm%C3%A4ki-801191192/" target="blank">
-                        <i class="fab fa-linkedin padding"></i></a>
-                </div>
-                <div class="col-12">
-                    <a href="#ylos" role="button" class="btn btn-outline-secondary btn-lg" aria-pressed="true">Takaisin ylös</a>
-                </div>
             </div>
         </div>
 
         <!-- Footer -->
         <footer>
-            <div class="container-fluid">
-                <div class="row text-center d-flex justify-content-center">
-                    <div class="col-md-4">
-                        <hr class="light">
-                        <h5>Valmistun pian ja etsin töitä</h5>
-                        <hr class="light">
-                        <p>Kiitoksi paljon mielenkiinnostasi</p>
-                        <p>Toivon että tulevaisuudessa saan paljon projekteja</p>
-                        <p>Tapaamme varmasti silloin </p>
-                    </div>
-                    <div class="col-12">
-                        <hr class='light-1001'>
-                        <img src="img/logo.png" class="img_50" alt=""/>
-                    </div>
+            <div class="container">
+                <div class="col-12 social text-center">
+                    <h4>Contact with me</h4>
+                </div>
+                <div class="col-12 social text-center">
+                    <a href="https://www.facebook.com/alisa.luomanmaki" target="blank">
+                    <i class="fab fa-facebook"></i
+                    ></a>
+                    <a href=" https://github.com/Sisarus" target="blank">
+                    <i class="fab fa-github padding"></i
+                    ></a>
+                    <a
+                    href="https://www.linkedin.com/in/alisa-luomanm%C3%A4ki-801191192/"
+                    target="blank"
+                    >
+                    <i class="fab fa-linkedin padding"></i
+                    ></a>
                 </div>
 
+                <div class="col-12 text-center pb-5">
+                    <a href="#ylos" role="button" class="btn btn-outline-secondary btn-lg" aria-pressed="true">Takaisin ylös</a>
+                </div>
             </div>
         </footer>
 
@@ -231,5 +133,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
                 integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
         crossorigin="anonymous"></script>
+
+        <script src="../js/portfolio.js" type="text/javascript"></script>
     </body>
 </html>
