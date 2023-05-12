@@ -4,12 +4,13 @@
  */
 
 class PortfolioProject {
-    constructor(name, details, urlLivePage, urlGitHub, image) {
+    constructor(name, details, urlLivePage, urlGitHub, image, tags) {
         this._name = name;
         this._details = details;
         this._urlLivePage = urlLivePage;
         this._urlGitHub = urlGitHub;
         this._image = image;
+        this._tags = [...tags];
     }
 }
 
@@ -26,6 +27,7 @@ function fillData() {
         "https://sisarus.github.io/Bootstrap-Tindog/",
         "Bootstrap-Tindog",
         "img/portfolio_images/tindog-image.png",
+        ['frontend', 'bootstap']
     )
     listProjects.push(data);
 
@@ -35,6 +37,7 @@ function fillData() {
         "https://sisarus.github.io/css-qrcode/",
         "qr-code-component-main",
         "img/portfolio_images/learning.png",
+        ['frontend', 'bootstap']
     )
     listProjects.push(data);
 
@@ -44,6 +47,7 @@ function fillData() {
         "https://github.com/Sisarus/Javascript-drum/settings/pages",
         "Javascript-drum",
         "img/portfolio_images/learning_1.png",
+        ['frontend', 'bootstap']
     )
     listProjects.push(data);
 
@@ -53,6 +57,7 @@ function fillData() {
         "https://sisarus.github.io/jQuery-Simons-Game/",
         "jQuery-Simons-Game",
         "img/portfolio_images/learning_2.png",
+        ['frontend', 'bootstap']
     )
     listProjects.push(data);
 
@@ -62,6 +67,7 @@ function fillData() {
         "https://sisarus.github.io/css-qrcode/",
         "qr-code-component-main",
         "img/portfolio_images/Newletter.png",
+        ['frontend', 'bootstap']
     )
     listProjects.push(data);
 
@@ -71,6 +77,7 @@ function fillData() {
         "https://sisarus.github.io/css-qrcode/",
         "Nodejs-toDoList",
         "img/portfolio_images/nodejs-todolist.png",
+        ['frontend', 'bootstap']
     )
     listProjects.push(data);
 
@@ -80,6 +87,7 @@ function fillData() {
         "",
         "nestjs-api-todo",
         "img/backend.jpg",
+        ['frontend', 'bootstap']
     )
     listProjects.push(data);
 }
