@@ -1,11 +1,6 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
 /* 
     Created on : 11.3.2020, 18:15:38
-    Author     : alisa
+    Author     : alisa Luomanmäki
 */
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
@@ -29,22 +24,6 @@ html, body{
     font-size: 1.1em !important;
 }
 
-.carousel-caption{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.carousel-caption h1{
-    font-size: 500%;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 15px #000;
-}
-.carousel-caption h3{
-    font-size: 200%;
-    font-weight: 500;
-    text-shadow: 1px 1px 10px #000;
-    padding-bottom:  1rem;
-}
 .btn_etusivu{
     background-color: #cc0099;
     border: 1px solid #cc0099;
@@ -56,24 +35,7 @@ html, body{
     border: 1px solid  #cc33ff;
     color: #ffffff;
 }
-.jumbotron{
-    padding: 1rem;
-    border-radius: 0;
-}
-.padding{
-    padding-bottom: 2rem;
-}
-.welcome{
-    width: 75%;
-    margin: 0 auto;
-    padding-top: 2rem;
-}
-.welcome hr {
-    border-top: 2px solid #b4b4b4;
-    width: 95%;
-    margin-top: .3rem;
-    margin-bottom: 1rem;
-}
+
 .fa-edit{
     color: #f89020;
 }
@@ -95,13 +57,9 @@ html, body{
     max-width: 100%;
 }
 
-.social{
-    margin-top: 4rem;
-}
-
 .social a {
-    font-size: 4em;
-    padding: 2rem;
+    font-size: 3em;
+    padding: 1rem;
 }
 .fa-facebook{
     color: #4c0080;
@@ -146,12 +104,12 @@ hr.light-1001{
     margin-bottom: 1rem;
 }
 
-.img_50{
+.img_50 {
     height: 5rem;
     padding-bottom: 2rem;
 }
 
-.lead{
+.lead {
     font-size: 95%;
     margin-left: 10%;
     margin-right: 10%;
@@ -165,6 +123,11 @@ hr.light-1001{
 .fa-heart{
     font-size: 4rem;
     color: #ffe6e6;
+}
+
+.fa-star {
+    font-size: 3rem;
+    color: #FFD3A3;
 }
 
 .btn_painike{
@@ -217,8 +180,8 @@ hr.light-1001{
         font-size: 200%;
     }
     .social a{
-        font-size: 2.5rem;
-        padding: 1.2rem;
+        font-size: 1rem;
+        padding: 1rem;
     }
 }
 @media (max-width: 576px){
