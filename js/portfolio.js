@@ -33,7 +33,7 @@ function fillData() {
 
     data = new PortfolioProject (
         "QR code",
-        "I completed this exercise by only looking at the image and following the given styles. More in project",
+        "I completed this exercise by only looking at the image and following the given styles. More information in project.",
         "https://sisarus.github.io/css-qrcode/",
         "qr-code-component-main",
         "img/portfolio_images/learning.png",
@@ -47,7 +47,7 @@ function fillData() {
         "https://github.com/Sisarus/Javascript-drum/settings/pages",
         "Javascript-drum",
         "img/portfolio_images/learning_1.png",
-        ['frontend', 'bootstap']
+        ['frontend', 'jquery']
     )
     listProjects.push(data);
 
@@ -57,7 +57,7 @@ function fillData() {
         "https://sisarus.github.io/jQuery-Simons-Game/",
         "jQuery-Simons-Game",
         "img/portfolio_images/learning_2.png",
-        ['frontend', 'bootstap']
+        ['frontend', 'jquery']
     )
     listProjects.push(data);
 
@@ -77,7 +77,7 @@ function fillData() {
         "https://sisarus.github.io/css-qrcode/",
         "Nodejs-toDoList",
         "img/portfolio_images/nodejs-todolist.png",
-        ['frontend', 'bootstap']
+        ['node']
     )
     listProjects.push(data);
 
@@ -87,7 +87,7 @@ function fillData() {
         "",
         "nestjs-api-todo",
         "img/backend.jpg",
-        ['frontend', 'bootstap']
+        ['backend', 'node']
     )
     listProjects.push(data);
 }
@@ -97,8 +97,23 @@ let cards = '';
 
 function makeCards(project) {
     cards += '<div class="col-md-3"><div class="card mt-3">';
-    cards += '<img class="card-img-top profolioImg" src="' + project._image +'" />';
-    cards += '<div class="card-body"><h4 class="card-title">' + project._name + '</h4>';
+    cards += '<img class="card-img" src="' + project._image +'" alt="project image" />';
+    cards += '<div class="bg-secondary text-center text-white p-1" disabled>';
+    if(project._tags.length !== 0) {
+        let tagNumber = 0;
+        cards += '<p class="mb-0 text-uppercase font-weight-light">';
+        project._tags.map(tag => {
+            tagNumber += 1;
+            cards += tag;
+            if( tagNumber < project._tags.length){
+                cards += ' | ';
+            }
+        });
+        cards += '</p>';
+    }
+    cards +='</div>';
+    cards += '<div class="card-body">';
+    cards += '<h4 class="card-title">' + project._name + '</h4>';
     cards += '<p class="card-text">' + project._details + '</p>';
     if(project._urlLivePage.length !== 0) {
         cards += '<a href="' + project._urlLivePage + '" class="btn btn-outline-secondary mr-3" target="_blank">Live Page</a>';
@@ -109,9 +124,52 @@ function makeCards(project) {
     cards += '</div></div></div>';
 }
 
+let filteredList = [];
+
+let tagList = [];
+
+function filterWithTags() {
+    if(tagList.length === 0){
+        listProjects.map(makeCards);
+        return $('#portfolio').html(cards);
+    }
+    console.log(tagList)
+
+    let filtered = listProjects.filter(project => tagList.some(wantedTag => project._tags.includes(wantedTag)));
+    cards = '';
+    console.log("filtteri" + filtered)
+    if(filtered.length === 0) {
+        listProjects.map(makeCards);
+
+    } else {
+        filtered.map(makeCards);
+    }
+    $('#portfolio').html(cards);
+    console.log('here');
+}
+
 
 $(document).ready(function () {
-    fillData();    
+    fillData();
+
+    $('.isActive').on('click', function() {
+        if(tagList.includes($(this).attr("value"))){
+            tagList = tagList.filter(v => v !== $(this).attr("value")); 
+            $(this).removeClass('btn-secondary');
+            $(this).addClass('btn-outline-secondary');
+        } else {
+            tagList.push($(this).attr("value"));
+            
+            $(this).addClass('btn-secondary');
+            $(this).removeClass('btn-outline-secondary');
+        }
+
+        filterWithTags();
+
+      });
+
+
+   // $('#look-for').html(btnTags);
 
     listProjects.map(makeCards);
     $('#portfolio').html(cards);

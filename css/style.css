@@ -127,11 +127,16 @@ hr.light-1001{
     }
 }
 
-.profolioImg{
-  object-fit: none;
+.card-img {
+    object-fit: none;
     /* Do not scale the image */
     object-position: center;
     /* Center the image within the element */
     height: 200px;
     width: 100%;
 }
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
