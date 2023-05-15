@@ -42,22 +42,22 @@ function fillData() {
     listProjects.push(data);
 
     data = new PortfolioProject (
-        "Javascript-Drum",
+        "Drums",
         "Play drums by pressing or using the keyboard.",
-        "https://github.com/Sisarus/Javascript-drum/settings/pages",
-        "Javascript-drum",
+        "https://sisarus.github.io/js-drum/",
+        "js-drum",
         "img/portfolio_images/learning_1.png",
-        ['frontend', 'jquery']
+        ['javascript']
     )
     listProjects.push(data);
 
     data = new PortfolioProject (
-        "jQuery-Simons Game",
+        "Simons Game",
         "I have developed a small game using jQuery.",
         "https://sisarus.github.io/jQuery-Simons-Game/",
         "jQuery-Simons-Game",
         "img/portfolio_images/learning_2.png",
-        ['frontend', 'jquery']
+        ['jquery']
     )
     listProjects.push(data);
 
@@ -72,12 +72,32 @@ function fillData() {
     listProjects.push(data);
 
     data = new PortfolioProject (
-        "Nodejs Todolist",
+        "Todo-list",
         "This is a Node.js project where users can input messages that are displayed and can also be deleted.",
         "https://sisarus.github.io/css-qrcode/",
         "Nodejs-toDoList",
         "img/portfolio_images/nodejs-todolist.png",
-        ['node']
+        ['node', 'express', 'rest']
+    )
+    listProjects.push(data);
+
+    data = new PortfolioProject (
+        "api-todo",
+        "This is a Node.js project where users can input messages that are displayed and can also be deleted. Using NestJS",
+        "",
+        "nestjs-api-todo",
+        "img/backend.jpg",
+        ['backend', 'node', 'postgresql', 'docker', 'jwt' , 'rest']
+    )
+    listProjects.push(data);
+
+    data = new PortfolioProject (
+        "api-Notes",
+        "Simple backend for notes.",
+        "",
+        "nestjs-api-todo",
+        "img/backend.jpg",
+        ['backend', 'node', 'express', 'rest']
     )
     listProjects.push(data);
 
@@ -87,7 +107,18 @@ function fillData() {
         "",
         "nestjs-api-todo",
         "img/backend.jpg",
-        ['backend', 'node']
+        ['backend', 'node', 'postgresql']
+    )
+    listProjects.push(data);
+
+
+    data = new PortfolioProject (
+        "nestjs-api-todo",
+        "This is a Node.js project where users can input messages that are displayed and can also be deleted.",
+        "",
+        "nestjs-api-todo",
+        "img/backend.jpg",
+        ['backend', 'node', 'postgresql']
     )
     listProjects.push(data);
 }
@@ -101,7 +132,7 @@ function makeCards(project) {
     cards += '<div class="bg-secondary text-center text-white p-1" disabled>';
     if(project._tags.length !== 0) {
         let tagNumber = 0;
-        cards += '<p class="mb-0 text-uppercase font-weight-light">';
+        cards += '<p class="mb-0 text-uppercase" style="font-size: 0.9rem">';
         project._tags.map(tag => {
             tagNumber += 1;
             cards += tag;
@@ -133,19 +164,13 @@ function filterWithTags() {
         listProjects.map(makeCards);
         return $('#portfolio').html(cards);
     }
-    console.log(tagList)
 
-    let filtered = listProjects.filter(project => tagList.some(wantedTag => project._tags.includes(wantedTag)));
+    let filtered = listProjects.filter(project => tagList.every(wantedTag => project._tags.includes(wantedTag)));
     cards = '';
-    console.log("filtteri" + filtered)
-    if(filtered.length === 0) {
-        listProjects.map(makeCards);
 
-    } else {
-        filtered.map(makeCards);
-    }
+    filtered.map(makeCards);
+    
     $('#portfolio').html(cards);
-    console.log('here');
 }
 
 
@@ -167,9 +192,6 @@ $(document).ready(function () {
         filterWithTags();
 
       });
-
-
-   // $('#look-for').html(btnTags);
 
     listProjects.map(makeCards);
     $('#portfolio').html(cards);

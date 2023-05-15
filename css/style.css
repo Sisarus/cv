@@ -139,4 +139,8 @@ hr.light-1001{
 .btn:focus {
     outline: none;
     box-shadow: none;
-  }
+}
+
+#portfolio{
+    min-height: 300px;
+}
