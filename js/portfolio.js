@@ -95,30 +95,19 @@ function fillData() {
         "api-Notes",
         "Simple backend for notes.",
         "",
-        "nestjs-api-todo",
+        "Nodejs-todoList",
         "img/backend.jpg",
         ['backend', 'node', 'express', 'rest']
     )
     listProjects.push(data);
 
     data = new PortfolioProject (
-        "nestjs-api-todo",
-        "This is a Node.js project where users can input messages that are displayed and can also be deleted.",
+        "react-redux-db",
+        "Single page React app that read and saves data to json. States are stored bu Redux.",
         "",
-        "nestjs-api-todo",
+        "react-redux-db",
         "img/backend.jpg",
-        ['backend', 'node', 'postgresql']
-    )
-    listProjects.push(data);
-
-
-    data = new PortfolioProject (
-        "nestjs-api-todo",
-        "This is a Node.js project where users can input messages that are displayed and can also be deleted.",
-        "",
-        "nestjs-api-todo",
-        "img/backend.jpg",
-        ['backend', 'node', 'postgresql']
+        ['frontend', 'react', 'redux', 'bootstrap', 'rest']
     )
     listProjects.push(data);
 }
@@ -129,7 +118,7 @@ let cards = '';
 function makeCards(project) {
     cards += '<div class="col-md-3"><div class="card mt-3">';
     cards += '<img class="card-img" src="' + project._image +'" alt="project image" />';
-    cards += '<div class="bg-secondary text-center text-white p-1" disabled>';
+    cards += '<div class="bg-secondary text-center text-white p-1 mt-n3" disabled>';
     if(project._tags.length !== 0) {
         let tagNumber = 0;
         cards += '<p class="mb-0 text-uppercase" style="font-size: 0.9rem">';
