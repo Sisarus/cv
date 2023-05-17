@@ -31,6 +31,16 @@ function fillData() {
         ['frontend', 'react', 'redux', 'bootstap']
     )
     listProjects.push(data);
+
+    data = new PortfolioProject (
+        "My town",
+        "Homework from school. Learning bootstrap and jQuery. Shows my hometown",
+        "https://sisarus.github.io/Bootstrap-jQuery-my-town/",
+        "Bootstrap-jQuery-my-town",
+        "mytown01.png",
+        ['frontend', 'bootstap', 'jquery']
+    )
+    listProjects.push(data);
     
     data = new PortfolioProject (
         "Tindog",
@@ -61,6 +71,18 @@ function fillData() {
         ['javascript']
     )
     listProjects.push(data);
+
+
+    data = new PortfolioProject (
+        "Kalevala Quiz",
+        "Play drums by pressing or using the keyboard.",
+        "https://sisarus.github.io/kalevala-quiz/",
+        "kalevala-quiz",
+        "kalevala01.png",
+        ['frontend', 'bootstap', 'jquery']
+    )
+    listProjects.push(data);
+
 
     data = new PortfolioProject (
         "Simons Game",
