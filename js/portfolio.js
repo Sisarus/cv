@@ -145,12 +145,33 @@ function fillData() {
     listProjects.push(data);
 
     data = new PortfolioProject (
-        "Budject app",
-        "IBM is hosting a React Subject App Challenge that presents an opportunity for participants to showcase their skills in developing React applications. Single page web app.",
+        "Router Nav",
+        "Single page React app where you can use navigation what is made with router.",
         "",
-        "Budget-app",
-        "budject_app01.png",
+        "react-router",
+        "reactrouter01.png",
         ['frontend', 'react', 'bootstrap']
+    )
+    listProjects.push(data);
+
+    data = new PortfolioProject (
+        "CyclOPedia",
+        "Single page app that shows difference between Class and Funtion Components. App create Instructor for class and user can add more student. App shows when components will update. Added same Class component but with function base.",
+        "",
+        "react-cyclopedia",
+        "react_components.png",
+        ['frontend', 'react', 'bootstrap']
+    )
+    listProjects.push(data);
+
+
+    data = new PortfolioProject (
+        "api-Notes",
+        "Simple backend for notes.",
+        "",
+        "Nodejs-todoList",
+        "backend.jpg",
+        ['backend', 'node', 'express', 'rest']
     )
     listProjects.push(data);
     
