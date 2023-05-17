@@ -38,7 +38,7 @@ function fillData() {
         "https://sisarus.github.io/Bootstrap-jQuery-my-town/",
         "Bootstrap-jQuery-my-town",
         "mytown01.png",
-        ['frontend', 'bootstrap', 'jquery']
+        ['frontend', 'bootstrap', 'jquery', 'javascript']
     )
     listProjects.push(data);
     
@@ -79,7 +79,7 @@ function fillData() {
         "https://sisarus.github.io/kalevala-quiz/",
         "kalevala-quiz",
         "kalevala01.png",
-        ['frontend', 'bootstrap', 'jquery']
+        ['frontend', 'bootstrap', 'jquery', 'javascript']
     )
     listProjects.push(data);
 
