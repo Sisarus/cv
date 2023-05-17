@@ -28,7 +28,7 @@ function fillData() {
         "",
         "react-redux",
         "reduxOpedia.png",
-        ['frontend', 'react', 'redux', 'bootstap']
+        ['frontend', 'react', 'redux', 'bootstrap']
     )
     listProjects.push(data);
 
@@ -38,7 +38,7 @@ function fillData() {
         "https://sisarus.github.io/Bootstrap-jQuery-my-town/",
         "Bootstrap-jQuery-my-town",
         "mytown01.png",
-        ['frontend', 'bootstap', 'jquery']
+        ['frontend', 'bootstrap', 'jquery']
     )
     listProjects.push(data);
     
@@ -48,7 +48,7 @@ function fillData() {
         "https://sisarus.github.io/Bootstrap-Tindog/",
         "Bootstrap-Tindog",
         "tindog-image.png",
-        ['frontend', 'bootstap']
+        ['frontend', 'bootstrap']
     )
     listProjects.push(data);
 
@@ -58,7 +58,7 @@ function fillData() {
         "https://sisarus.github.io/css-qrcode/",
         "qr-code-component-main",
         "learning.png",
-        ['frontend', 'bootstap']
+        ['frontend', 'bootstrap']
     )
     listProjects.push(data);
 
@@ -79,7 +79,7 @@ function fillData() {
         "https://sisarus.github.io/kalevala-quiz/",
         "kalevala-quiz",
         "kalevala01.png",
-        ['frontend', 'bootstap', 'jquery']
+        ['frontend', 'bootstrap', 'jquery']
     )
     listProjects.push(data);
 
@@ -100,7 +100,7 @@ function fillData() {
         "https://sisarus.github.io/css-qrcode/",
         "qr-code-component-main",
         "Newletter.png",
-        ['frontend', 'bootstap']
+        ['frontend', 'bootstrap']
     )
     listProjects.push(data);
 
@@ -136,7 +136,7 @@ function fillData() {
 
     data = new PortfolioProject (
         "react-redux-db",
-        "Single page React app that read and saves data to json. States are stored bu Redux.",
+        "Single page React app that read and saves data to json. States are stored by Redux.",
         "",
         "react-redux-db",
         "backend.jpg",
