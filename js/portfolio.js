@@ -122,12 +122,22 @@ function fillData() {
     listProjects.push(data);
     
     data = new PortfolioProject (
-        "Budject app",
-        "IBM is hosting a React Subject App Challenge that presents an opportunity for participants to showcase their skills in developing React applications. Single page web app.",
+        "Fruits Database",
+        "This is a simple application for managing fruits and users using MongoDB as the database. It allows users to add, update, and delete fruits, as well as associate fruits with users. Run from shell. This only create base database for testing.",
         "",
-        "Budget-app",
-        "img/portfolio_images/budject_app01.png",
-        ['frontend', 'react', 'bootstrap']
+        "fruits_database",
+        "img/backend.jpg",
+        ['backend', 'mongodb', 'node']
+    )
+    listProjects.push(data);
+
+    data = new PortfolioProject (
+        "Secrets",
+        "This is a web application that provides user authentication and security features. Users can register, log in, and submit secrets. Secrets are visible to authenticated users only.",
+        "",
+        "auth-security",
+        "img/portfolio_images/secrets_01.png",
+        ['backend', 'frontend', 'mongodb', 'node', 'ejs', 'session', 'mongoose', 'passportjs', 'google-authentication', 'express']
     )
     listProjects.push(data);
 }
