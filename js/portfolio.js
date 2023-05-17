@@ -110,6 +110,26 @@ function fillData() {
         ['frontend', 'react', 'redux', 'bootstrap', 'rest']
     )
     listProjects.push(data);
+
+    data = new PortfolioProject (
+        "Budject app",
+        "IBM is hosting a React Subject App Challenge that presents an opportunity for participants to showcase their skills in developing React applications. Single page web app.",
+        "",
+        "Budget-app",
+        "img/portfolio_images/budject_app01.png",
+        ['frontend', 'react', 'bootstrap']
+    )
+    listProjects.push(data);
+    
+    data = new PortfolioProject (
+        "Budject app",
+        "IBM is hosting a React Subject App Challenge that presents an opportunity for participants to showcase their skills in developing React applications. Single page web app.",
+        "",
+        "Budget-app",
+        "img/portfolio_images/budject_app01.png",
+        ['frontend', 'react', 'bootstrap']
+    )
+    listProjects.push(data);
 }
 
 
