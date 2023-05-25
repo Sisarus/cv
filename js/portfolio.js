@@ -114,15 +114,15 @@ function fillData() {
     )
     listProjects.push(data);
 
-    // data = new PortfolioProject (
-    //     "api-todo",
-    //     "This is a Node.js project where users can input messages that are displayed and can also be deleted. Using NestJS",
-    //     "",
-    //     "nestjs-api-todo",
-    //     "backend.jpg",
-    //     ['backend', 'node', 'postgresql', 'docker', 'jwt' , 'rest']
-    // )
-    // listProjects.push(data);
+    data = new PortfolioProject (
+        "api-todo",
+        "This is a Node.js project where users can input messages that are displayed and can also be deleted. Using NestJS",
+        "",
+        "nestjs-api-todo",
+        "backend.jpg",
+        ['backend', 'node', 'postgresql', 'docker', 'jwt' , 'rest']
+    )
+    listProjects.push(data);
 
     data = new PortfolioProject (
         "api-Notes",
